@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/listClubFragment">
+    <fragment
+        android:id="@+id/listClubFragment"
+        android:name="com.example.fauzi_chalange_chapter6.ui.listplayer.ListPlayerFragment"
+        android:label="List Pemain Persib" >
+        <action
+            android:id="@+id/action_listClubFragment_to_listPemainFragment"
+            app:destination="@id/listDetailFragment" />
+        <action
+            android:id="@+id/action_listClubFragment_to_favoriteClubFragment"
+            app:destination="@id/favoriteClubFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listDetailFragment"
+        android:name="com.example.fauzi_chalange_chapter6.ui.detailplayer.DetailPlayerFragment"
+        android:label="Detail Pemain Persib" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="nama"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="image"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteClubFragment"
+        android:name="com.example.fauzi_chalange_chapter6.ui.favoriteplayer.FavoritePlayerFragment"
+        android:label="Pemain Terfavorit" >
+        <action
+            android:id="@+id/action_favoriteClubFragment_to_listDetailFragment"
+            app:destination="@id/listDetailFragment" />
+    </fragment>
+
+
+</navigation>
