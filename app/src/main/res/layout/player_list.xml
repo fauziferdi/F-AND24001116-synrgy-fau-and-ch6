@@ -9,7 +9,8 @@
     >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
         <ImageView
             android:id="@+id/image_poster"
             android:layout_width="140dp"
@@ -23,7 +24,7 @@
         <TextView
             android:id="@+id/text_title"
             android:layout_width="151dp"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
             android:ellipsize="end"
             android:maxLines="2"
             android:textAlignment="center"
