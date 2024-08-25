@@ -1,4 +1,4 @@
-package com.example.fauzi_chalange_chapter6.di.factory
+package com.example.fauzi_chalange_chapter6.di
 
 import com.example.fauzi_chalange_chapter6.ui.detailplayer.DetailPlayerLogicViewModel
 import com.example.fauzi_chalange_chapter6.ui.favoriteplayer.FavoritePlayerViewModel

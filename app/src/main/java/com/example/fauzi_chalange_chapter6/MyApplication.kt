@@ -1,7 +1,7 @@
 package com.example.fauzi_chalange_chapter6
 
 import android.app.Application
-import com.example.fauzi_chalange_chapter6.di.factory.viewModelModuleFactory
+import com.example.fauzi_chalange_chapter6.di.viewModelModuleFactory
 import com.example.fauzi_chalange_chapter6.di.koinModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
